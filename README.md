@@ -5,3 +5,4 @@ This is a Typst template for the International Astronautical Congress (IAC) manu
 ## Notable differences from the official template
 
 - The first line of the first paragraph is not indented. This is due to [a known limitation of the Typst](https://github.com/typst/typst/issues/311).
+- The citation style is not exactly the same as the official template. This could be fixed by manually preparing a CSL file, but it is "good enough."

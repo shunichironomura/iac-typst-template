@@ -1,11 +1,7 @@
-# Typst workspace template
+# Typst Template for the International Astronautical Congress (IAC) Manuscript
 
-This is a template for a workspace for the [Typst](https://typst.app/).
+This is a Typst template for the International Astronautical Congress (IAC) manuscript, which is based on [the 74th IAC Manuscript Guidelines](https://www.iafastro.org/assets/files/IAC%202023%20Manuscript%20Guidelines.pdf) and [the Manuscript Template and Style Guide](https://www.iafastro.org/assets/files/IAC%202023_Manuscript-Template.doc).
 
-## In WSL
+## Notable differences from the official template
 
-When working in WSL, make sure to add the following line to the `.profile` file for the Windows fonts to be available.
-
-```bash
-export TYPST_FONT_PATHS="/mnt/c/Windows/Fonts"
-```
+- The first line of the first paragraph is not indented. This is due to [a known limitation of the Typst](https://github.com/typst/typst/issues/311).

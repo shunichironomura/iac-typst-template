@@ -21,6 +21,9 @@
   keywords: (
     "(maximum 6 keywords)",
   ),
+  header: [74#super[th] International Astronautical Congress (IAC), Baku, Azerbaijan, 2-6 October 2023.\
+    Copyright #{sym.copyright}2023 by the International Astronautical Federation (IAF). All rights reserved.
+  ],
   // Insert your abstract after the colon, wrapped in brackets.
   // Example: `abstract: [This is my abstract...]`
   abstract: [A concise and factual abstract (written in third person and in one paragraph) of no more than 400 words is required. The abstract should state briefly the purpose of the research, the principal results and major conclusions. An abstract must be stand alone and complete in itself with no references to the main body of the manuscript. References should be avoided, but if essential, then cite the author(s) and year(s). Also, non-standard or uncommon abbreviations should be avoided, but if essential they must be defined at their first mention in the abstract itself. Readers should not have to read the full text to understand the abstract. The abstract can be an updated version of the one submitted at the call-for-abstracts, but its contents must not differ substantially.],

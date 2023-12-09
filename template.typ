@@ -6,16 +6,14 @@
   authors: (),
   organizations: (),
   keywords: (),
+  header: [],
   body,
 ) = {
   // Set the document's basic properties.
   set document(author: authors.map(a => a.name), title: title)
   set page(
     paper: "us-letter",
-    header: align(center, text(8pt)[
-      74#super[th] International Astronautical Congress (IAC), Baku, Azerbaijan, 2-6 October 2023.\
-      Copyright #{sym.copyright}2023 by the International Astronautical Federation (IAF). All rights reserved.
-    ]),
+    header: align(center, text(8pt, header)),
     footer: grid(
       columns: (1fr, 1fr),
       align(left)[

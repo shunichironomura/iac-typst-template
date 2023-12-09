@@ -89,7 +89,7 @@ Tables can be placed either next to the relevant text in the article, or on sepa
 
 = Cite the references
 
-Indicate references like this @van2000art.
+Indicate references like this @van2000art. Or like this @van2000art @chang2016ups.
 = Results
 #lorem(40)
 
@@ -107,4 +107,4 @@ Indicate references like this @van2000art.
 
 #heading(numbering: none)[Appendix B. Title of appendix]
 
-#bibliography("example.bib", title: "References")
+#bibliography("example.bib", title: "References", style: "american-institute-of-aeronautics-and-astronautics")

@@ -1,5 +1,4 @@
 #import "template.typ": *
-#import "@preview/tablex:0.0.5": hlinex, gridx
 
 #show: project.with(
   paper_code: "IAC-23-A1.2.3",
@@ -73,18 +72,21 @@ Ensure that each figure/illustration has a title. All figures/illustrations must
 Tables can be placed either next to the relevant text in the article, or on separate page(s) at the end. Number and cite (as shown in Table 1) tables consecutively in accordance with their appearance in the text. Place table title above and any remarks below the table body.
 
 #figure(
-  gridx(
+  table(
     columns: 5,
-    header-rows: 1,
-    hlinex(stroke: 1.5pt),
-    [], [Venus], [Earth], [Mars], [Jupiter],
-    hlinex(stroke: 0.5pt),
-    [$M/M_E$], [0.82], [1], [0.11], [317.89],
+    table.header(
+      [],
+      [Venus],
+      [Earth],
+      [Mars],
+      [Jupiter],
+    ),
+
+    [$M / M_E$], [0.82], [1], [0.11], [317.89],
     [$e$], [0.007], [0.017], [0.093], [0.048],
-    hlinex(stroke: 1.5pt),
+    table.hline(stroke: 1.5pt),
   ),
   caption: [Major data of the orbits of Venus, Earth, Mars and Jupiter],
-  kind: table,
 )
 
 = Cite the references

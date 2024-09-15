@@ -89,19 +89,34 @@
   } else {
     numbers.pos().map(str).join(".")
   })
-  show heading.where(level: 1): it => [
-    #set text(size: 10pt)
-    #set heading(numbering: "1.1.1")
-    #it
-  ]
-  show heading.where(level: 2): it => [
-    #set text(size: 10pt, weight: "regular", style: "italic")
-    #it
-  ]
-  show heading.where(level: 3): it => [
-    #set text(size: 10pt, weight: "regular", style: "italic")
-    #it
-  ]
+  show heading.where(level: 1): it => {
+    {
+      set text(size: 10pt)
+      set heading(numbering: "1.1.1")
+      it
+    }
+    let a = par(box())
+    a
+    v(-0.45 * measure(2 * a).width)
+  }
+  show heading.where(level: 2): it => {
+    {
+      set text(size: 10pt, weight: "regular", style: "italic")
+      it
+    }
+    let a = par(box())
+    a
+    v(-0.45 * measure(2 * a).width)
+  }
+  show heading.where(level: 3): it => {
+    {
+      set text(size: 10pt, weight: "regular", style: "italic")
+      it
+    }
+    let a = par(box())
+    a
+    v(-0.45 * measure(2 * a).width)
+  }
 
   // Figure show rule
   show figure.where(kind: image): it => align(center)[

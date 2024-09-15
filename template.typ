@@ -119,6 +119,12 @@
     #v(0.65em)
   ]
 
+  set table(stroke: (x, y) => if y == 0 {
+    (top: 1.5pt, bottom: 0.5pt)
+  } else {
+    (top: none, bottom: none)
+  })
+
   show par: set block(spacing: 0.65em)
   set par(justify: true, first-line-indent: 0.5cm)
   show: columns.with(2, gutter: 1.3em)

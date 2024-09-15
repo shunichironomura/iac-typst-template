@@ -1,7 +1,7 @@
 #import "template.typ": *
 
 #show: project.with(
-  paper_code: "IAC-23-A1.2.3",
+  paper_code: "IAC-24-A1.2.3",
   title: "Manuscript Template and Style Guide (Title of Your Paper)",
   authors: (
     (name: "Eva Y.-W. Chang", email: "eva77tw@cc.hc.cust.edu.tw", affiliation: "China University of Science and Technology", corresponding: true),
@@ -20,8 +20,8 @@
   keywords: (
     "(maximum 6 keywords)",
   ),
-  header: [74#super[th] International Astronautical Congress (IAC), Baku, Azerbaijan, 2-6 October 2023.\
-    Copyright #{sym.copyright}2023 by the International Astronautical Federation (IAF). All rights reserved.
+  header: [75#super[th] International Astronautical Congress (IAC), Milan, Italy, 14-18 October 2024.\
+    Copyright #{sym.copyright}2024 by the International Astronautical Federation (IAF). All rights reserved.
   ],
   // Insert your abstract after the colon, wrapped in brackets.
   // Example: `abstract: [This is my abstract...]`
@@ -56,7 +56,7 @@ A Theory section should extend, not repeat, the background to the article alread
 == Equation numbers
 Number consecutively any equations that have to be displayed separately from the text (if referred to explicitly in the text). The numbers identifying the equations should be placed in parentheses to the right of the equation. For example:
 $
-arrow(F)_g = - G (m times m_E) / R_E^2 arrow(i)_r = m arrow(g)_(t a)
+  arrow(F)_g = - G (m times m_E) / R_E^2 arrow(i)_r = m arrow(g)_(t a)
 $
 
 == Figure numbers
@@ -65,7 +65,7 @@ Ensure that each figure/illustration has a title. All figures/illustrations must
 #figure(
   image("img/spaceship_two.jpg", width: 80%),
   caption: [SpaceShipTwo carried under White Knight Two],
-  supplement: [Fig.]
+  supplement: [Fig.],
 ) <fig:spaceship_two>
 
 == Tables

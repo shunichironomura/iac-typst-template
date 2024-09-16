@@ -83,7 +83,6 @@ Tables can be placed either next to the relevant text in the article, or on sepa
 
     [$M / M_E$], [0.82], [1], [0.11], [317.89],
     [$e$], [0.007], [0.017], [0.093], [0.048],
-    table.hline(stroke: 1.5pt),
   ),
   caption: [Major data of the orbits of Venus, Earth, Mars and Jupiter],
 )

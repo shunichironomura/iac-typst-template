@@ -65,7 +65,6 @@ Ensure that each figure/illustration has a title. All figures/illustrations must
 #figure(
   image("img/spaceship_two.jpg", width: 80%),
   caption: [SpaceShipTwo carried under White Knight Two],
-  supplement: [Fig.],
 ) <fig:spaceship_two>
 
 == Tables

@@ -122,6 +122,7 @@
   }
 
   // Figure show rule
+  show figure.where(kind: image): set figure(supplement: [Fig.])
   show figure.where(kind: image): it => align(center)[
     #v(0.65em)
     #block(below: 0.65em)[#it.body]

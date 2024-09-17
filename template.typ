@@ -138,11 +138,12 @@
     #v(0.65em)
   ]
 
-  set table(stroke: (x, y) => if y == 0 {
-    (top: 1.5pt, bottom: 0.5pt)
-  } else {
-    (top: none, bottom: none)
-  })
+  set table(stroke: (x, y) => (
+    left: 0pt,
+    right: 0pt,
+    top: if y < 1 { 1.5pt } else if y < 2 { 0.5pt } else { 0pt },
+    bottom: 1.5pt,
+  ))
 
   show par: set block(spacing: 0.65em)
   set par(justify: true, first-line-indent: 0.5cm)

@@ -1,4 +1,4 @@
-// #import "@preview/stellar-iac:0.1.0": project
+// #import "@preview/stellar-iac:0.2.0": project
 #import "../lib.typ": project
 
 #show: project.with(

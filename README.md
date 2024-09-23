@@ -32,6 +32,8 @@ The `project` function exported by this template has the following named argumen
 - `header` (default: `[]`): The header of the manuscript. For IAC 2024, it should be `[75#super[th] International Astronautical Congress (IAC), Milan, Italy, 14-18 October 2024.\ Copyright #{sym.copyright}2024 by the International Astronautical Federation (IAF). All rights reserved.]`.
 - `abstract` (default: `""`): The abstract of the manuscript.
 
+See [`main.typ`](template/main.typ) for more details.
+
 ## Notable differences from the official template
 
 - The citation style is not exactly the same as the official template. This could be fixed by manually preparing a CSL file, but it is "good enough."

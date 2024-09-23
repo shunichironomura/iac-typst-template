@@ -13,7 +13,7 @@ typst init @preview/stellar-iac
 Or, you can manually add the following line at the beginning of your Typst file:
 
 ```typst
-#import "@preview/stellar-iac:0.3.0": project
+#import "@preview/stellar-iac:0.4.1": project
 ```
 
 The `project` function exported by this template has the following named arguments:

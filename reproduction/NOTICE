@@ -1,0 +1,9 @@
+NOTICE
+
+The content in this `reproduction` directory is a reproduction of the official MS Word template provided by the International Astronautical Federation (IAF).
+
+- Copyright ©2024 by the International Astronautical Federation (IAF). All rights reserved.
+- This content is provided solely for the purpose of demonstrating how the Typst template in `lib.typ` can be used to reproduce a similar layout.
+- This content is not part of the distributed package and is not licensed for use, modification, or distribution without express permission from the copyright holder.
+
+For more information on the original template, please refer to the official IAF website.

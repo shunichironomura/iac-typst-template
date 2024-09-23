@@ -1,6 +1,6 @@
 # Typst Template for the International Astronautical Congress (IAC) Manuscript
 
-This is an unofficial Typst template for the International Astronautical Congress (IAC) manuscript, which is based on [the 74th IAC Manuscript Guidelines](https://www.iafastro.org/assets/files/IAC%202023%20Manuscript%20Guidelines.pdf) and [the Manuscript Template and Style Guide](https://www.iafastro.org/assets/files/IAC%202023_Manuscript-Template.doc).
+This is an unofficial Typst template for the International Astronautical Congress (IAC) manuscript, which is based on [the 74th IAC Manuscript Guidelines (PDF file)](https://www.iafastro.org/assets/files/IAC%202023%20Manuscript%20Guidelines.pdf) and [the Manuscript Template and Style Guide (MS Word file)](https://www.iafastro.org/assets/files/IAC%202023_Manuscript-Template.doc).
 
 ## Usage
 
@@ -37,3 +37,12 @@ See [`main.typ`](template/main.typ) for more details.
 ## Notable differences from the official template
 
 - The citation style is not exactly the same as the official template. This could be fixed by manually preparing a CSL file, but it is "good enough."
+
+## License
+
+This template is licensed under the MIT License.
+
+The contents in the `template/main.typ` file are based on the Manuscript Template and Style Guide provided by the International Astronautical Federation (IAF). The original documents are available at the following links:
+
+- [74th IAC Manuscript Guidelines (PDF file)](https://www.iafastro.org/assets/files/IAC%202023%20Manuscript%20Guidelines.pdf)
+- [Manuscript Template and Style Guide (MS Word file)](https://www.iafastro.org/assets/files/IAC%202023_Manuscript-Template.doc)

@@ -7,7 +7,7 @@ authors = [
     "Shunichiro Nomura <@shunichironomura>",
     "Riki Nakamura <@conjikidow>",
 ]
-license = "MIT"
+license = "MIT-0"
 description = "Template for the International Astronautical Congress (IAC) manuscript"
 repository = "https://github.com/shunichironomura/iac-typst-template"
 keywords = ["IAC", "conference", "International Astronautical Congress"]

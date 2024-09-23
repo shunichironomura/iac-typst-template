@@ -1,5 +1,5 @@
 [package]
-name = "iac-manuscript"
+name = "stellar-iac"
 version = "0.1.0"
 compiler = "0.11.1"
 entrypoint = "lib.typ"
@@ -10,7 +10,7 @@ authors = [
 license = "MIT"
 description = "Template for the International Astronautical Congress (IAC) manuscript"
 repository = "https://github.com/shunichironomura/iac-typst-template"
-keywords = ["IAC", "conference"]
+keywords = ["IAC", "conference", "International Astronautical Congress"]
 categories = ["paper"]
 disciplines = ["engineering"]
 

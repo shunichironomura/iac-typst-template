@@ -13,7 +13,7 @@ typst init @preview/stellar-iac
 Or, you can manually add the following line at the beginning of your Typst file:
 
 ```typst
-#import "@preview/stellar-iac:0.3.0": project
+#import "@preview/stellar-iac:0.4.1": project
 ```
 
 The `project` function exported by this template has the following named arguments:
@@ -38,11 +38,10 @@ See [`main.typ`](template/main.typ) for more details.
 
 - The citation style is not exactly the same as the official template. This could be fixed by manually preparing a CSL file, but it is "good enough."
 
-## License
+## Directory Structure and Licensing
 
-This template package is licensed under the MIT-0 License.
+- The `lib.typ` file and all other files in this package, except for the content in the `template` directory, are licensed under the MIT License. See [LICENSE-MIT.txt](./LICENSE-MIT.txt) for details.
 
-The contents of the `reproduction` directory (not included in the published template package) are based on the Manuscript Template and Style Guide provided by the International Astronautical Federation (IAF). The original documents are available at the following links:
+- The content in the `template` directory is licensed under the MIT-0 License, which allows for unlimited reuse without any restrictions. See [LICENSE-MIT-0.txt](./LICENSE-MIT-0.txt) for more information.
 
-- [74th IAC Manuscript Guidelines (PDF file)](https://www.iafastro.org/assets/files/IAC%202023%20Manuscript%20Guidelines.pdf)
-- [Manuscript Template and Style Guide (MS Word file)](https://www.iafastro.org/assets/files/IAC%202023_Manuscript-Template.doc)
+- The `reproduction` directory is included in this repository to demonstrate how the Typst template in `lib.typ` can be used to reproduce a layout similar to [the original MS Word template](https://www.iafastro.org/assets/files/IAC%202023_Manuscript-Template.doc) copyrighted by the International Astronautical Federation (IAF). **This content is not part of the distributed package and is provided here solely for demonstration purposes.** It is not licensed for use, modification, or distribution without permission from the copyright holder.

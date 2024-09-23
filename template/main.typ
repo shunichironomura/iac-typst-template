@@ -1,7 +1,8 @@
-#import "template.typ": *
+// #import "@preview/iac-manuscript:0.1.0": project
+#import "../lib.typ": project
 
 #show: project.with(
-  paper_code: "IAC-24-A1.2.3",
+  paper-code: "IAC-24-A1.2.3",
   title: "Manuscript Template and Style Guide (Title of Your Paper)",
   authors: (
     (name: "Eva Y.-W. Chang", email: "eva77tw@cc.hc.cust.edu.tw", affiliation: "China University of Science and Technology", corresponding: true),
@@ -60,12 +61,12 @@ $
 $
 
 == Figure numbers
-Ensure that each figure/illustration has a title. All figures/illustrations must be numbered and cited (see @fig:spaceship_two) in the text consecutively. Place figures/ illustrations as close as possible to the first references to them in the manuscript. Restrict them to single-column width unless this would make them illegible (then extend these figures/illustrations across two columns or place them to the end of your paper).
+Ensure that each figure/illustration has a title. All figures/illustrations must be numbered and cited (see @fig:spaceship-two) in the text consecutively. Place figures/ illustrations as close as possible to the first references to them in the manuscript. Restrict them to single-column width unless this would make them illegible (then extend these figures/illustrations across two columns or place them to the end of your paper).
 
 #figure(
   image("img/spaceship_two.jpg", width: 80%),
   caption: [SpaceShipTwo carried under White Knight Two],
-) <fig:spaceship_two>
+) <fig:spaceship-two>
 
 == Tables
 Tables can be placed either next to the relevant text in the article, or on separate page(s) at the end. Number and cite (as shown in Table 1) tables consecutively in accordance with their appearance in the text. Place table title above and any remarks below the table body.
@@ -107,4 +108,4 @@ Indicate references like this @van2000art. Or like this @van2000art @chang2016up
 
 #heading(numbering: none)[Appendix B. Title of appendix]
 
-#bibliography("example.bib", title: "References", style: "american-institute-of-aeronautics-and-astronautics")
+#bibliography("references.bib", title: "References", style: "american-institute-of-aeronautics-and-astronautics")

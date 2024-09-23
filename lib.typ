@@ -1,6 +1,6 @@
 
 #let project(
-  paper_code: "",
+  paper-code: "",
   title: "",
   abstract: [],
   authors: (),
@@ -17,7 +17,7 @@
     footer: grid(
       columns: (1fr, 1fr),
       align(left)[
-        #paper_code
+        #paper-code
       ],
       align(right)[
         Page
@@ -32,7 +32,7 @@
 
   // Paper code
   align(center)[
-    #block(text(paper_code))
+    #block(text(paper-code))
     #v(1.3em, weak: true)
   ]
 
@@ -141,7 +141,13 @@
   set table(stroke: (x, y) => (
     left: 0pt,
     right: 0pt,
-    top: if y < 1 { 1.5pt } else if y < 2 { 0.5pt } else { 0pt },
+    top: if y < 1 {
+      1.5pt
+    } else if y < 2 {
+      0.5pt
+    } else {
+      0pt
+    },
     bottom: 1.5pt,
   ))
 

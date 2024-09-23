@@ -13,6 +13,7 @@ repository = "https://github.com/shunichironomura/iac-typst-template"
 keywords = ["IAC", "conference", "International Astronautical Congress"]
 categories = ["paper"]
 disciplines = ["engineering"]
+exclude = ["**.pdf"]
 
 [template]
 path = "template"

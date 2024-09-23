@@ -40,9 +40,9 @@ See [`main.typ`](template/main.typ) for more details.
 
 ## License
 
-This template is licensed under the MIT License.
+This template package is licensed under the MIT-0 License.
 
-The contents in the `reproduction` directory are based on the Manuscript Template and Style Guide provided by the International Astronautical Federation (IAF). The original documents are available at the following links:
+The contents of the `reproduction` directory (not included in the published template package) are based on the Manuscript Template and Style Guide provided by the International Astronautical Federation (IAF). The original documents are available at the following links:
 
 - [74th IAC Manuscript Guidelines (PDF file)](https://www.iafastro.org/assets/files/IAC%202023%20Manuscript%20Guidelines.pdf)
 - [Manuscript Template and Style Guide (MS Word file)](https://www.iafastro.org/assets/files/IAC%202023_Manuscript-Template.doc)

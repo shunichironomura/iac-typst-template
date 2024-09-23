@@ -2,7 +2,7 @@
 #import "../lib.typ": project
 
 #show: project.with(
-  paper_code: "IAC-24-A1.2.3",
+  paper-code: "IAC-24-A1.2.3",
   title: "Manuscript Template and Style Guide (Title of Your Paper)",
   authors: (
     (name: "Eva Y.-W. Chang", email: "eva77tw@cc.hc.cust.edu.tw", affiliation: "China University of Science and Technology", corresponding: true),

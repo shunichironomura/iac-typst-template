@@ -161,7 +161,7 @@
     bottom: 1.5pt,
   ))
 
-  show par: set block(spacing: 0.65em)
+  set par(spacing: 0.65em)
   set par(justify: true, first-line-indent: 0.5cm)
   show: columns.with(2, gutter: 1.3em)
   set math.equation(numbering: "(1)")

@@ -44,27 +44,37 @@
 
   // Authors
   align(center)[
-    #authors.enumerate(start: 1).map(ia => [
-      #let (index, author) = ia
-      #let author_key = numbering("a", index)
-      #set text(weight: "bold")
-      #box[#author.name#super(author_key)#if author.at("corresponding", default: false) {
-          sym.ast.basic
-        }]]).join(", ")
+    #(
+      authors
+        .enumerate(start: 1)
+        .map(ia => [
+          #let (index, author) = ia
+          #let author_key = numbering("a", index)
+          #set text(weight: "bold")
+          #box[#author.name#super(author_key)#if author.at("corresponding", default: false) {
+              sym.ast.basic
+            }]])
+        .join(", ")
+    )
     #v(1.3em, weak: true)
   ]
 
   // Author affiliations
   align(left)[
-    #authors.enumerate(start: 1).map(ia => [
-      #let (index, author) = ia
-      #let author_key = numbering("a", index)
-      #set text(style: "italic")
-      #let org = organizations.find(o => o.name == author.affiliation)
-      #super(author_key) #org.display#if author.email != none {
-        [, #text(style: "normal",underline[#link("mailto:" + author.email)])]
-      }
-    ]).join(linebreak())
+    #(
+      authors
+        .enumerate(start: 1)
+        .map(ia => [
+          #let (index, author) = ia
+          #let author_key = numbering("a", index)
+          #set text(style: "italic")
+          #let org = organizations.find(o => o.name == author.affiliation)
+          #super(author_key) #org.display#if author.email != none {
+            [, #text(style: "normal", underline[#link("mailto:" + author.email)])]
+          }
+        ])
+        .join(linebreak())
+    )
     #linebreak()
     #sym.ast.basic Corresponding Author
   ]

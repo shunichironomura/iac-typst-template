@@ -21,7 +21,7 @@
       ],
       align(right)[
         Page
-        #counter(page).display(
+        #context counter(page).display(
           "1 of 1",
           both: true,
         )
@@ -44,27 +44,37 @@
 
   // Authors
   align(center)[
-    #authors.enumerate(start: 1).map(ia => [
-      #let (index, author) = ia
-      #let author_key = numbering("a", index)
-      #set text(weight: "bold")
-      #box[#author.name#super(author_key)#if author.at("corresponding", default: false) {
-          sym.ast.basic
-        }]]).join(", ")
+    #(
+      authors
+        .enumerate(start: 1)
+        .map(ia => [
+          #let (index, author) = ia
+          #let author_key = numbering("a", index)
+          #set text(weight: "bold")
+          #box[#author.name#super(author_key)#if author.at("corresponding", default: false) {
+              sym.ast.basic
+            }]])
+        .join(", ")
+    )
     #v(1.3em, weak: true)
   ]
 
   // Author affiliations
   align(left)[
-    #authors.enumerate(start: 1).map(ia => [
-      #let (index, author) = ia
-      #let author_key = numbering("a", index)
-      #set text(style: "italic")
-      #let org = organizations.find(o => o.name == author.affiliation)
-      #super(author_key) #org.display#if author.email != none {
-        [, #text(style: "normal",underline[#link("mailto:" + author.email)])]
-      }
-    ]).join(linebreak())
+    #(
+      authors
+        .enumerate(start: 1)
+        .map(ia => [
+          #let (index, author) = ia
+          #let author_key = numbering("a", index)
+          #set text(style: "italic")
+          #let org = organizations.find(o => o.name == author.affiliation)
+          #super(author_key) #org.display#if author.email != none {
+            [, #text(style: "normal", underline[#link("mailto:" + author.email)])]
+          }
+        ])
+        .join(linebreak())
+    )
     #linebreak()
     #sym.ast.basic Corresponding Author
   ]
@@ -121,22 +131,19 @@
     v(-0.45 * measure(2 * a).width)
   }
 
-  // Figure show rule
-  show figure.where(kind: image): set figure(supplement: [Fig.])
-  show figure.where(kind: image): it => align(center)[
+  // Figure show rules
+  set figure.caption(separator: [. ])
+  show figure: it => align(center)[
     #v(0.65em)
-    #block(below: 0.65em)[#it.body]
-    #it.supplement #it.counter.display(it.numbering). #it.caption.body
+    #it
     #v(0.65em)
   ]
 
-  // Table show rule
-  show figure.where(kind: table): it => align(center)[
-    #v(0.65em)
-    #it.supplement #it.counter.display(it.numbering). #it.caption.body
-    #block(above: 0.65em)[#it.body]
-    #v(0.65em)
-  ]
+  // Image show rules
+  show figure.where(kind: image): set figure(supplement: [Fig.])
+
+  // Table show rules
+  show figure.where(kind: table): set figure.caption(position: top)
 
   set table(stroke: (x, y) => (
     left: 0pt,
@@ -151,7 +158,7 @@
     bottom: 1.5pt,
   ))
 
-  show par: set block(spacing: 0.65em)
+  set par(spacing: 0.65em)
   set par(justify: true, first-line-indent: 0.5cm)
   show: columns.with(2, gutter: 1.3em)
   set math.equation(numbering: "(1)")

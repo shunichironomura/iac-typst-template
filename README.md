@@ -4,6 +4,10 @@ This is an unofficial Typst template for the International Astronautical Congres
 
 ## Usage
 
+> [!WARNING]
+> These commands may not work if this template is not yet merged into the official [Typst package/template registry](https://github.com/typst/packages).
+> To use the latest version of this template, consider cloning this repository and using it as a local package.
+
 To initialize a project with this template, run the following command:
 
 ```bash
@@ -13,7 +17,7 @@ typst init @preview/stellar-iac
 Or, you can manually add the following line at the beginning of your Typst file:
 
 ```typst
-#import "@preview/stellar-iac:0.4.1": project
+#import "@preview/stellar-iac:0.5.0": project
 ```
 
 The `project` function exported by this template has the following named arguments:

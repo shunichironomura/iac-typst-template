@@ -3,7 +3,7 @@
 #import "../lib.typ": project
 
 #show: project.with(
-  paper-code: "IAC-24-A1.2.3",
+  paper-code: "IAC-25-A1.2.3",
   title: "Title of the paper",
   authors: (
     (
@@ -68,13 +68,7 @@ You can reference tables like this @table:sample-data.
 #figure(
   table(
     columns: 5,
-    table.header(
-      [],
-      [$alpha$],
-      [$beta$],
-      [$gamma$],
-      [$delta$],
-    ),
+    table.header([], [$alpha$], [$beta$], [$gamma$], [$delta$]),
 
     [Parameter A], [3.21], [1.57], [0.89], [4.76],
     [Parameter B], [0.123], [0.456], [0.789], [0.234],

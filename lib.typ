@@ -28,7 +28,8 @@
       ],
     ),
   )
-  set text(font: "Times New Roman", lang: "en", size: 10pt)
+  let univ-text-size = 10pt
+  set text(font: "Times New Roman", lang: "en", size: univ-text-size)
 
   // Paper code
   align(center)[
@@ -102,41 +103,16 @@
   } else {
     numbers.pos().map(str).join(".")
   })
-  show heading.where(level: 1): it => {
-    {
-      set text(size: 10pt)
-      set heading(numbering: "1.1.1")
-      it
-    }
-    let a = par(box())
-    a
-    v(-0.45 * measure(2 * a).width)
-  }
-  show heading.where(level: 2): it => {
-    {
-      set text(size: 10pt, weight: "regular", style: "italic")
-      it
-    }
-    let a = par(box())
-    a
-    v(-0.45 * measure(2 * a).width)
-  }
-  show heading.where(level: 3): it => {
-    {
-      set text(size: 10pt, weight: "regular", style: "italic")
-      it
-    }
-    let a = par(box())
-    a
-    v(-0.45 * measure(2 * a).width)
-  }
+  show heading.where(level: 1): set text(size: univ-text-size)
+  show heading.where(level: 2): set text(size: univ-text-size, weight: "regular", style: "italic")
+  show heading.where(level: 3): set text(size: univ-text-size, weight: "regular", style: "italic")
 
   // Figure show rules
   set figure.caption(separator: [. ])
   show figure: it => align(center)[
-    #v(0.65em)
+    #if it.placement == none { v(0.65em) }
     #it
-    #v(0.65em)
+    #if it.placement == none { v(0.65em) }
   ]
 
   // Image show rules
@@ -159,7 +135,7 @@
   ))
 
   set par(spacing: 0.65em)
-  set par(justify: true, first-line-indent: 0.5cm)
+  set par(justify: true, first-line-indent: (amount: 0.5cm, all: true))
   show: columns.with(2, gutter: 1.3em)
   set math.equation(numbering: "(1)")
 

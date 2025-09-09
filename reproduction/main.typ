@@ -2,11 +2,16 @@
 #import "../lib.typ": project
 
 #show: project.with(
-  paper-code: "IAC-24-A1.2.3",
+  paper-code: "IAC-25-A1.2.3",
   title: "Manuscript Template and Style Guide (Title of Your Paper)",
   authors: (
-    (name: "Eva Y.-W. Chang", email: "eva77tw@cc.hc.cust.edu.tw", affiliation: "China University of Science and Technology", corresponding: true),
-    (name: "Rock J.-S. Chern",  email: "editor-in-chief@iaamail.org", affiliation: "Ryerson University"),
+    (
+      name: "Eva Y.-W. Chang",
+      email: "eva77tw@cc.hc.cust.edu.tw",
+      affiliation: "China University of Science and Technology",
+      corresponding: true,
+    ),
+    (name: "Rock J.-S. Chern", email: "editor-in-chief@iaamail.org", affiliation: "Ryerson University"),
   ),
   organizations: (
     (
@@ -22,7 +27,7 @@
     "(maximum 6 keywords)",
   ),
   header: [75#super[th] International Astronautical Congress (IAC), Milan, Italy, 14-18 October 2024.\
-    Copyright #{sym.copyright}2024 by the International Astronautical Federation (IAF). All rights reserved.
+    Copyright #{ sym.copyright }2024 by the International Astronautical Federation (IAF). All rights reserved.
   ],
   // Insert your abstract after the colon, wrapped in brackets.
   // Example: `abstract: [This is my abstract...]`
@@ -74,13 +79,7 @@ Tables can be placed either next to the relevant text in the article, or on sepa
 #figure(
   table(
     columns: 5,
-    table.header(
-      [],
-      [Venus],
-      [Earth],
-      [Mars],
-      [Jupiter],
-    ),
+    table.header([], [Venus], [Earth], [Mars], [Jupiter]),
 
     [$M / M_E$], [0.82], [1], [0.11], [317.89],
     [$e$], [0.007], [0.017], [0.093], [0.048],
